@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif; 
+    background: url(img/anderson.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+nav {
+    background: rgba(0, 0, 0, 0);
+    padding: 0 15px;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#kontakt {
+    padding-right: 25px;
+}
+
+.logo {
+    font-size: 35px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.meny {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 85px;
+    font-size: 25px;
+
+}
+
+
+
+.content-container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.historia-header {
+    font-size: 60px;
+    padding-right: 150px;
+}
+
+.para-text {
+    max-width: 900px;
+    font-size: 25px;
+}
