@@ -4,10 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>MMA WORLD</title>
 </head>
 
 <body>
+    <nav class="nav-bar" class="cricle">
+        <ul class="meny">
+            <li><a class="nav-links" class="logo" href="/index.html"><img class="logo-photo" src="/img/logo2.png"
+                        alt=""></a>
+            </li>
+            <li><a class="nav-links" href="news.html">News</a></li>
+            <li><a class="nav-links" href="history.html">History</a></li>
+            <li><a class="nav-links" href="artgallery.html">Art gallery</a></li>
+            <li><a class="nav-links" id="kontakt" href="contact.html">Contact</a></li>
+            <ul class="meny">
+                <li><a id="nav-links-2" href="contact.html">Sign up<img id="sign-in" src="/img/singup2.png"
+                            alt="signup"></a>
+                </li>
+                <li><a id="nav-links-3" href="contact.html">Log in<img id="sign-up" src="/img/signin.png"
+                            alt="signup"></a></li>
+            </ul>
+        </ul>
+
+    </nav>
+
+    <header>
+    </header>
+
+
+
+    <div class="border-div"></div>
+
+    <section>
+        <div class="form-container">
+
+            <h1 class="contact-header">Let's get in touch!</h1>
+
+            <p>*The marked fields must be filled in</p>
+            <!--  <div id="error"></div> -->
+            <form action="/" method="GET" id="form">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter your first name here">
+                        <p class="star-mark">*</p>
+                    </li>
+                    <div id="error"></div>
+                    <li>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter your last name here">
+                        <p class="star-mark">*</p>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="mail" placeholder="Enter your email here">
+                        <p class="star-mark">*</p>
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone here">
+                        <p class="star-mark">*</p>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                    </li>
+                    <!--  <li>
+            <p>Age</p>
+            <ul class="flex-inner">
+            </ul>
+          </li> -->
+                    <li>
+                        <button type="submit">Send Message</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-and-about">
+                <a class="nav-links" class="logo" href="#"><img id="logo-photo-footer" src="/img/logo2.png" alt=""></a>
+                <h2>The social media for martial artists</h2>
+                <h3>Contact Us</h3>
+                <p>Mobile: 070-972 81 11</p>
+                <p>Email: mma.world@info.se</p>
+            </div>
+            <div class="information">
+                <h3>Information</h3>
+                <p>News</p><a href=""></a>
+                <p>Art Gallery</p>
+                <p>Blog</p>
+                <p>Events</p>
+            </div>
+            <div class="helpful-links">
+                <h3>helpful Links</h3>
+                <p>Support</p>
+                <p>Contact</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="subscribe">
+                <h4>Subscribe for news and more info</h4>
+                <form action="text">
+                    <input type="email" name="email" id="email" placeholder="Enter email here">
+                    <button id="btn-sub">Subscribe</button>
+                    <button id="top-of-site">↑</button>
+                </form>
+            </div>
+        </div>
+        <p id="all-rights">2020 © MMA WORLD AB. All Rights Reserved</p>
+        <div class="socialmedia-footer">
+            <a href="www.instagram.com"><img src="/img/instagram.png" class="social-icon" alt="instagram"></a>
+            <a href="www.instagram.com"><img src="/img/facebook.png" class="social-icon" alt="instagram"></a>
+            <a href="www.instagram.com"><img src="/img/twitter.png" class="social-icon" alt="instagram"></a>
+            <a href="www.instagram.com"><img src="/img/google-plus.png" class="social-icon" alt="instagram"></a>
+        </div>
+    </footer>
 
 </body>
 

@@ -26,6 +26,20 @@ body {
     
 }
 
+#anderson{
+    width: 100%;
+    background-size: cover;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover{
+    opacity: .7;
+}
+
 
 .nav-links {
     color: white;
@@ -123,7 +137,7 @@ a:hover{
 .header-mainpage {
     padding-top: 10px;
     font-size: 80px;
-    text-shadow: 4px 5px 7px #ffffff, 6px 3px 3px #ffffff;
+/*     text-shadow: 4px 5px 7px #ffffff, 6px 3px 3px #ffffff; */
 }
 
 .gloves {
@@ -146,7 +160,7 @@ a:hover{
 }
 
 #rumble2 {
-    padding-top: 600px;
+    padding-top: 900px;
 }
 
 p {
@@ -167,12 +181,12 @@ p {
 .conor-container {
     position: absolute;
     z-index: -1;
-    top: 1200px;
+    top: 1400px;
 }
 
 .header-2 {
     font-size: 3rem;
-    padding-left: 480px;
+    padding-left: 690px;
 }
 
 #rumble{
@@ -206,4 +220,501 @@ p {
 
 }
 
+/* SVG ANIMATION */
+.svg-container {
+    text-align: center;
+}
 
+#glv-main {
+    animation: glove 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  /*   transform-box: fill-box; */
+}
+
+
+@keyframes glove {
+    from {
+        transform: rotateX(40deg);
+    }
+
+    to {
+        transform: scaleX(0deg);
+    }
+}
+
+
+#arrow-down-1 {
+    animation: arrow .8s ease-in-out infinite alternate;
+    transform-origin: bottom;
+  /*   transform-box: fill-box; */
+}
+
+
+@keyframes arrow {
+    from {
+        transform: translateY(0%)
+    }
+
+    to {
+        transform: translateY(10%);
+    }
+}
+
+
+
+
+
+
+/* Sut på SVG animation */
+
+.section-2{
+    margin-top: 450px;
+    height: 100vh;
+    background-color: black;
+}
+
+footer {
+   background-image: linear-gradient(black
+     , rgba(20, 20, 20, 0.705));
+    height: 680px;
+    text-align: center;
+/*     border-top: groove white 1px; */
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    height: 480px;
+    border-top: groove white 1px;
+    border-bottom: groove white 1px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#logo-photo-footer{
+    max-width: 75%;
+}
+
+h3 {
+    color: rgb(156, 56, 56);
+    text-transform: uppercase;
+}
+
+div.helpful-links > h3{
+    padding-right: 35px;
+}
+
+div.information > p, div.helpful-links > p {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 2.8rem;
+}
+
+div.logo-and-about > h2{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+div.logo-and-about > h3 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 150px;
+}
+
+div.logo-and-about > p {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+#all-rights{
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.subscribe {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+h4{
+    font-size: 15px;
+
+}
+
+#email{
+    display: flex;
+    margin: 20px 0px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#top-of-site{
+display: flex;
+margin-top: 150px;
+margin-left: 150px;
+padding: 10px 20px;
+background-color: rgb(156, 56, 56);
+color: white;
+border: none;
+font-size: 25px;
+border-radius: 8px;
+}
+
+#btn-sub {
+    display: flex;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgb(156, 56, 56);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.socialmedia-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icon{
+    padding-top: 45px;
+    width: 15%;
+}
+
+
+
+/* Följande regler är fokuserat mot designen på "contact" fliken. */
+
+.contact-header {
+  /*   color: black; */
+    color: rgba(0, 0, 0, 0.719);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  align-items: center;
+}
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+ 
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+  border: solid rgb(0, 0, 0) 1px;
+}
+
+.flex-outer li button {
+    margin: 50px auto;
+    padding: 20px 16px;
+    font-size: 1.5rem;
+    border: groove lightgray 2px;
+/*     background: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0);
+    color: rgb(156, 56, 56);
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 15px;
+  }
+
+  .form-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 50px auto;
+    margin-top: 3%;
+    background: rgb(255, 255, 255);
+  /*   background: rgba(156, 56, 56, 0.685); */
+    padding: 2%;
+    border-radius: 20px;
+  }
+
+  .border-div {
+      padding-top: 35px;
+      border-bottom: groove white 1px;
+      width: 1400px;
+      margin: 0 auto;
+  }
+
+  .flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .flex-outer li label,
+.flex-outer li {
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+   color: rgba(7, 7, 7, 0.486);
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: groove lightgray 3px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+::placeholder {
+    color: rgba(102, 102, 102, 0.534);
+    font-size: 1.4em;
+}
+
+.form-container > p, .star-mark{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
+#error {
+     color: rgb(255, 0, 0);
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 250px;
+
+}
+
+/* Regler för contact form slut */
+
+/* Fortsatta regeler för main-page */
+
+.section-2-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.section-2-container > h1{
+    padding-bottom: 50px;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.section-2-container > P{
+    z-index: 1;
+}
+.section-2-container > img{
+    position: absolute;
+    padding: 390px 0px 0px 100px;
+
+}
+
+#waiting-for{
+   position: absolute;
+   top: 3000px;
+   left: 300px;
+    font-size: 39px;
+
+}
+
+
+/* svg arrow */
+
+.svg-container-2 {
+    position: absolute;
+   /*  top: 210%; */
+   top: 2000px;
+    left: 46%;
+}
+
+/* end of arrow */
+
+
+
+
+
+/* Css regeler för "news" fliken */
+
+.ufc-poster {
+ /*    margin: 0 auto; */
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-news {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.842);
+    flex-direction: column;
+    height: 136vh;
+}
+
+.header-news > h1 {
+    padding-top: 50px;
+  font-size: 95px;
+}
+
+.articel-news{
+    display: flex;
+    flex-direction: column;
+}
+
+.articel-news > h1{
+    color:black;
+    margin: 0 auto;
+    font-size: 50px;
+}   
+
+.articel-news > p {
+    color: black;
+    font-size: 25px;
+    padding-top: 50px;
+    max-width: 1600px;
+}
+
+.news-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height:240vh;
+}
+
+.float-img {
+    width: 25%;
+    float: left;
+    margin-right: 60px;
+}
+
+.float-img-2 {
+    width: 20%;
+    height: 20%;
+    margin-left: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query för mobil anpassning */
+
+@media (min-width: 600px) {
+    .main-art {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+         grid-gap: 10px 10px;
+
+    }
+
+    .info-img{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .figure{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .figure3{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .figure6{
+        grid-column: span 2;
+    }
+    .figure7{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .figure8{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .figure9{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .figure10{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+   
+    .figure11{
+        grid-column: span 2;
+    }
+    .figure12{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .figure13{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .figure14{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .figure15{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+ }
+
+ /* Avlustar media query */
+
+
+
+
+
+
+ /*  Css för "art gallery" */
+
+
+.figure-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-img {
+    padding: 40px;
+
+}
+
+
+.main-art { 
+    max-width: 1400px;
+    margin: 100px auto;
+    border: solid rgba(156, 56, 56) 10px;
+    background-color: rgba(156, 56, 56);
+}
+
+
+/* Avlsutar CSS för art gallery */
