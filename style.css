@@ -186,7 +186,7 @@ p {
 
 .header-2 {
     font-size: 3rem;
-    padding-left: 690px;
+    padding-left: 25%;
 }
 
 #rumble{
@@ -611,17 +611,6 @@ border-radius: 8px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* media query för mobil anpassning */
 
 @media (min-width: 600px) {
@@ -686,6 +675,63 @@ border-radius: 8px;
     }
  }
 
+
+  @media screen and (max-width: 1350px) {
+    #nav-links-2, #nav-links-3 {
+      display: none;
+    }
+}
+  @media screen and (max-width: 900px) {
+    .nav-links {
+      font-size: 18px;
+    }
+    .header-mainpage {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
+    #rumble2 {
+        padding-top: 230px;
+    }
+    #rumble {
+        padding-left: 150px;
+    }
+}
+  @media screen and (max-width: 1000px) {
+    #logo-nav {
+      max-width: 15%;
+      padding: 0px;
+      margin: 0px;
+       }
+    }
+  @media screen and (max-width: 1300px) {
+    #section-one > p, #section-one > h2 {
+      width: 80%;
+      margin: 0 auto;
+       }
+    }
+  @media screen and (max-width: 1300px) {
+    .conor-container, #rumble > a {
+      display: none;
+       }
+    }
+
+  @media screen and (max-width: 2000px) {
+    .section-2-container > img {
+      display: none;
+       }
+    }
+  @media screen and (max-width: 1250px) {
+    .header-mainpage {
+      font-size: 45px;
+    }
+    .svg-container, .svg-container-2 {
+        display: none;
+    }
+
+}
+
  /* Avlustar media query */
 
 
@@ -717,4 +763,4 @@ border-radius: 8px;
 }
 
 
-/* Avlsutar CSS för art gallery */
+/* Avlsutar CSS för art gallery */ 
