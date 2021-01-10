@@ -1,2 +1,0 @@
-# mma-world
-mma-world
